@@ -1,0 +1,8 @@
+<div class="flex flex-col items-center w-12 bg-blue-900 h-screen">
+    <img class="h-8 w-8 mt-5" src="assets/common/logo.png" alt="App Logo">
+    <div class="pt-3">
+        <div class="p-2 m-2 {{selectedButton === button.id? 'bg-blue-600 rounded':''}}" *ngFor="let button of navbar_buttons">
+            <img class="w-4 h-4" [src]="'assets/navbar_buttons/navbtn'+button.id+'.png'">
+        </div>
+    </div>
+</div>
